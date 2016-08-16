@@ -1,0 +1,8 @@
+struct tnode * createNode(int data) { 
+        struct tnode *newNode; 
+        newNode  = (struct tnode *) malloc(sizeof(struct tnode)); 
+        newNode->data = data; 
+        newNode->left = NULL; 
+        newNode->right = NULL; 
+        return (newNode); 
+  }
