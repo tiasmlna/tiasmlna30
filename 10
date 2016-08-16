@@ -1,0 +1,4 @@
+case 3: 
+                                eslt: 
+                                printf("U've entered wrong opetion\n"); 
+                                break; 
