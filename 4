@@ -1,0 +1,9 @@
+ /* inorder tree traversal */ 
+  void inOrder(struct tnode *node) { 
+        if (node) { 
+                inOrder(node->left); 
+                printf("%d  ", node->data); 
+                inOrder(node->right); 
+        } 
+        return; 
+  }
