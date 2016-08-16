@@ -1,0 +1,10 @@
+/* inserting a new node into the tree */ 
+  void insertion(struct tnode **node, int data) { 
+        if (!*node) { 
+                *node = createNode(data); 
+        } else if (data < (*node)->data) { 
+                insertion(&(*node)->left, data); 
+        } else if (data > (*node)->data) { 
+                insertion(&(*node)->right, data); 
+        } 
+  }
